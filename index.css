@@ -1,0 +1,198 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+header, main, footer {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 100vh;
+    background-color: aquamarine;
+}
+footer{
+    user-select: none;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+section {
+    margin-bottom: 20vh;
+}
+
+.my-name{
+    font-size: 10vh;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: block;
+    user-select: none;
+}
+.my-title{
+    font-size: 6vh;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+    display: block;
+    user-select: none;
+}
+.nav-bar{
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2;
+    display: block;
+    user-select: none;
+    z-index: 1;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3vh;
+    transition-duration: 0.125s;
+}
+.nav-bar li a:hover{
+    color: rgb(100, 100, 100);
+}
+.barlow-condensed-regular{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-me-title, .contact-title, .projects-title{
+    font-size: 8vh;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    user-select: none;
+}
+#about{
+    margin-top: 6vh;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.about-me{
+    font-size: 3vh;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    -webkit-user-drag: none;
+}
+.profile-image:hover img {
+transform: scale(1.4);
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    border: 1px dashed #007bff;
+    border-radius: 20px;
+}
+
+#contact li {
+    margin-bottom: 15px;
+    font-size: 2.5vh;
+}
+.contact-footer{
+    font-size: 3vh;
+}
+#contact li i {
+    width: 30px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+#contact .link-text {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact .link-text:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.project-container{
+    text-align: left;
+    width: 90%;
+}
+.project-title{
+    width: min-content;
+    display: block;
+    text-align: left;
+    font-size: 5vh;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    user-select: none;
+    text-decoration: none;
+    color: #007bff;
+    transition-duration: 0.125s;
+}
+.project-title:hover{
+    color: #0056b3;
+}
+.project-description{
+    font-size: 3vh;
+}
+
+.ctrltalk-container {
+    width: 20vh;
+    height: 20vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    float: right;
+}
+
+.ctrltalk-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.ctrltalk-container:hover .ctrltalk-gif {
+    transform: scale(1.1);
+}
