@@ -1,8 +1,5 @@
 
-$(document).ready(function() {
-    // Your code here
-    
-    // Example: Smooth scrolling for navigation links
+$(document).ready(function() {    
     $('nav a').on('click', function(event) {
         if (this.hash !== '') {
             event.preventDefault();
@@ -15,7 +12,6 @@ $(document).ready(function() {
         }
     });
 
-    // Example: Add a fade-in effect to sections as they come into view
     $(window).scroll(function() {
         $('section').each(function() {
             var top_of_element = $(this).offset().top;
@@ -26,6 +22,4 @@ $(document).ready(function() {
             }
         });
     });
-
-    // Add more jQuery functionality as needed
 });
