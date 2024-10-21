@@ -8,7 +8,15 @@
     border-radius: 10px;
     position: relative;
     background-color: white;
+    max-width: 90vh;
 }
+
+/* Styles for mobile devices (screens narrower than 768px) */
+@media screen and (max-width: 768px) {
+    .contact-ul {
+      width: 75%; /* Mobile width */
+    }
+  }
 
 @property --angle{
     syntax: "<angle>";
@@ -29,6 +37,7 @@
     padding: 3px;
     border-radius: 10px;
     animation: 3s spin linear infinite;
+    will-change: transform;
 }
 .contact-ul::before{
     filter: blur(1.5rem);
