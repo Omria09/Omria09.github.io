@@ -122,12 +122,12 @@ section {
 transform: scale(1.4);
 }
 
-#contact ul {
+/* #contact ul {
     list-style-type: none;
     padding: 0;
     border: 1px dashed #007bff;
     border-radius: 20px;
-}
+} */
 
 #contact li {
     margin-bottom: 15px;
@@ -159,7 +159,21 @@ transform: scale(1.4);
     flex-direction: column;
     width: 90%;
     margin-left: 5%;
+    /* animation: backInRight;
+    animation-duration: 1.5s; */
 }
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    animation: backInRight;
+    animation-duration: 1.25s;
+}
+
 .project-title{
     font-size: 5vh;
     font-family: "Barlow Condensed", sans-serif;

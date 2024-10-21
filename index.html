@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="scrollwheel.css">
+    <link rel="stylesheet" href="glow.css">
+    <link rel="stylesheet" href="typewriter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +35,15 @@
             <li></li>
     </ul>
         <a class="my-name">I'm Omri.</a>
-        <a class="my-title">A developer.</a>
+        <div class="typewriter">
+            <a class="my-title">A developer.</a>
+        </div>
         <nav class="nav-bar">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">My projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
+                <li><a href="Omri anidgar resume.pdf">Get Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -49,27 +55,40 @@
                 <img src="Me.JPEG" alt="Omri's Profile Picture">
               </div>
             <a class="about-me-title">Hi.</a>
-            <a class="barlow-condensed-regular about-me">Im a passionate Full Stack Developer
-                skilled in C++ and JavaScript.</br>
+            <a class="barlow-condensed-regular about-me">Im a Full Stack Developer
+                skilled in JavaScript, React, C++ and more.</br>
                 I'm eager to launch my career in software development.</br>
                 I am excited to contribute to a dynamic development team where I can work on projects and continue learning.</a>
         </section>
 
         <section id="projects">
             <a class="projects-title">My projects</a>
+            <!-- Url shortener -->
+            <div class="project-container hidden">
+                <a class="project-title" href="http://ktzr.lol/">URL shortener</a>
+                <div class="project-description-container"> 
+                    <a class="project-description barlow-condensed-regular"> 
+                        A URL shortener built with <b>React and Node.js (Express)</b>, using <b>MongoDB</b> for storage,</br>
+                        <b>Cloudflare Workers</b> for CDN, and <b>Axios</b> for API handling.</br>
+                        It tracks clicks, shortens URLs, and redirects efficiently.</br>
+                        The app is deployed via Netlify for the frontend and Railway for the backend.
+                    </a>
+                    <img src="https://ktzr.lol/static/media/v2.f04e0c10a5066c83684b.gif" alt="ktzr gif" class="ctrltalk-gif">
+                </div>
+            </div>
             <!-- talktome -->
-            <div class="project-container">
+            <div class="project-container hidden">
                 <a class="project-title" href="https://github.com/Omria09/TalkToMe">TalkToMe</a>
                 <div class="project-description-container"> 
                     <a class="project-description barlow-condensed-regular"> 
-                        a desktop application built with React and Electron, designed to facilitate video chatting, screen sharing, and text messaging.</br>
+                        A desktop application built with React and Electron, designed to facilitate video chatting, screen sharing, and text messaging.</br>
                         The app offers a seamless communication experience, making it ideal for remote teams, online classes, or connecting with friends and family.
                     </a>
                     <img src="ctrltalk.gif" alt="ctrltalk gif" class="ctrltalk-gif">
                 </div>
             </div>
             <!-- cs2planner -->
-            <div class="project-container">
+            <div class="project-container hidden">
                 <a class="project-title" href="https://github.com/Omria09/CS2Planner">CS2Planner</a>
                 <div class="project-description-container"> 
                     <a class="project-description barlow-condensed-regular"> 
@@ -81,7 +100,7 @@
                 </div>
             </div>
             <!-- todo list -->
-            <div class="project-container">
+            <div class="project-container hidden">
                 <a class="project-title" href="https://omria09.github.io/todo/public/index.html">Todo list</a>
                 <div class="project-description-container"> 
                     <a class="project-description barlow-condensed-regular"> 
@@ -96,11 +115,12 @@
 
         <section id="contact" class="barlow-condensed-regular">
             <a class="contact-title">Get in touch</a>
-            <ul>
+            <ul class="contact-ul">
                 <li><i class="fas fa-envelope"></i>Email: <a class="link-text" href="mailto:omria09@gmail.com">omria09@gmail.com</a></li>
                 <li><i class="fas fa-phone"></i>Phone: +972 053-2844980</li>
                 <li><i class="fab fa-linkedin"></i>LinkedIn: <a class="link-text" href="https://www.linkedin.com/in/omri-anidgar/" target="_blank">https://www.linkedin.com/in/omri-anidgar/</a></li>
                 <li><i class="fab fa-github"></i>GitHub: <a class="link-text" href="https://github.com/Omria09" target="_blank">https://github.com/Omria09</a></li>
+                <li><i class="fa fa-file"></i>Resume: <a class="link-text" href="Omri anidgar resume.pdf" target="_blank">Get my resume</a></li>
                 <li><i class="fas fa-map-marker-alt"></i>Location: Tel Aviv, Israel</li>
             </ul>
             <a class="contact-footer">Feel free to get in touch with me! I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</a>

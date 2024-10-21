@@ -22,4 +22,19 @@ $(document).ready(function() {
             }
         });
     });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                $(entry.target).addClass('show');
+            }
+        });
+    });
+    
+    const hiddenElements = $('.project-container');
+    hiddenElements.each(function() {
+        observer.observe(this);
+    });
+    
 });

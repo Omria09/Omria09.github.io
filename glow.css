@@ -1,0 +1,45 @@
+.contact-ul{
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-ul::after, .contact-ul::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), rgb(78, 255, 196),rgb(127, 240, 255) , rgb(127, 157, 255), rgb(130, 109, 252), #00c3ff,#62adfd );
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+.contact-ul::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
